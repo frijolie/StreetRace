@@ -1,0 +1,15 @@
+#gamePane {
+    -fx-background-color: rgb(0,128,0);
+}
+
+#opponentPane {
+    -fx-background-color: rgb(0,128,0);
+}
+
+#playerPane {
+    -fx-background-color: rgb(0,128,0);
+}
+
+#playerHand {
+    -fx-background-color: rgb(0,128,0);
+}

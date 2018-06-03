@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.StackPane?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" stylesheets="/css/MainMenu.css"
+  xmlns="http://javafx.com/javafx/8.0.121"
+  fx:controller="com.frijolie.streetrace.controller.MenuController">
+  <MenuBar>
+    <Menu mnemonicParsing="false" text="File" fx:id="fileMenu">
+      <MenuItem text="New Game" fx:id="newGameMenuItem">
+        <accelerator>
+          <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+        </accelerator>
+      </MenuItem>
+      <SeparatorMenuItem mnemonicParsing="false"/>
+      <MenuItem onAction="#handleExit" text="Quit" fx:id="exitMenuItem">
+        <accelerator>
+          <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+        </accelerator>
+      </MenuItem>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Edit" fx:id="editMenu">
+      <MenuItem text="Preferences" fx:id="preferencesMenuItem">
+        <accelerator>
+          <KeyCodeCombination alt="DOWN" code="P" control="UP" meta="UP" shift="UP" shortcut="UP"/>
+        </accelerator>
+      </MenuItem>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Help" fx:id="helpMenu">
+      <MenuItem text="Rules" fx:id="rulesMenuItem">
+        <accelerator>
+          <KeyCodeCombination alt="UP" code="F1" control="UP" meta="UP" shift="UP" shortcut="UP"/>
+        </accelerator>
+      </MenuItem>
+      <MenuItem text="About" fx:id="aboutMenuItem">
+        <accelerator>
+          <KeyCodeCombination alt="UP" code="F2" control="UP" meta="UP" shift="UP" shortcut="UP"/>
+        </accelerator>
+      </MenuItem>
+    </Menu>
+  </MenuBar>
+</StackPane>
